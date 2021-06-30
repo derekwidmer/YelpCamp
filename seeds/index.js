@@ -31,14 +31,14 @@ const seedDB = async () => {
             title: `${sample(descriptors)} ${sample(places)}`,
             images: [
                 {
-                    url: 'https://res.cloudinary.com/dpp2nfnez/image/upload/v1624906819/YelpCamp/nmrzm6nz7nnajlti1vmp.jpg',
-                    filename: 'YelpCamp/nmrzm6nz7nnajlti1vmp'
+                    url: 'https://res.cloudinary.com/dpp2nfnez/image/upload/v1625027405/YelpCamp/vfozp7tncqrapnfidcie.png',
+                    filename: 'YelpCamp/vfozp7tncqrapnfidcie.png'
                 },
                 {
                     url: 'https://res.cloudinary.com/dpp2nfnez/image/upload/v1624906819/YelpCamp/tgcvozvrbhmfmp8lddvz.jpg',
                     filename: 'YelpCamp/tgcvozvrbhmfmp8lddvz'
                 }],
-            description: 'This is a campground to camp in with camping friends.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             price,
             author: '60d94ae2bd6f234866158526', //My author id
             geometry: {
