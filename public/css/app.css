@@ -1,9 +1,80 @@
 #cluster-map {
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 
 #map {
     width: 100%;
     height: 300px;
+}
+
+.navbar, .footer {
+    background-color: #272838 !important;
+}
+
+.footer {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #347FC4;
+    border-color: #347FC4;
+}
+
+.btn-success {
+    background-color: #5E9BD4;
+    border-color: #5E9BD4;
+}
+
+.img-fluid {
+    object-fit: cover;
+    width: 1000px;
+    height: 150px;
+}
+
+.card-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.index-card {
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.index-card:hover {
+    box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.cover-container {
+    max-width: 60vw;
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 1rem;
+    border-bottom: 0.15rem solid transparent;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom-color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-link.active {
+    color:white;
+    border-bottom-color: white;
+}
+
+.slide img {
+    height: 350px;
+    object-position: center;
+    object-fit: cover;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    color: #272838;
 }

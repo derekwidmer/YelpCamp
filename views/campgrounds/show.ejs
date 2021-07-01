@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/css/stars.css">
 
 <div class="row">
-    <div class="col-6">
+    <div class="col-md-6">
         <div class="card mb-3 rounded-3 overflow-hidden">
             <div id="campgroundCarousel" class="carousel slide card-img-top" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -26,7 +26,7 @@
                 <% } %>
             </div>
             <div class=" card-body">
-                <h5 class="card-title"><%= campground.title %></h5>
+                <h3 class="card-title"><%= campground.title %></h3>
                 <p class="card-text"><%= campground.description  %></p>
             </div>
             <ul class="list-group list-group-flush">
@@ -47,9 +47,9 @@
             </div>
         </div>
     </div>
-    <div class="col-6">
+    <div class="col-md-6">
         <div class="mb-3 rounded-3 overflow-hidden">
-            <div id='map' style='height: 300px;'></div>
+            <%- include('../partials/showMap.ejs')  %>
         </div>
         <% if(user) { %>
         <h2 class="mb-3">Leave a Review</h2>
@@ -80,6 +80,8 @@
             <button class="btn btn-success">Post</button>
         </form>
         <% } %>
+        <hr>
+        <% if(campground.reviews.length){ %>
         <% for(let review of campground.reviews) { %>
         <div class="card mb-3">
             <div class="card-body">
@@ -97,14 +99,13 @@
             </div>
             <% } %>
         </div>
+        <% } } else { %>
+        <div class="d-flex justify-content-center mt-5">
+            <h4 class="text-muted">There are no reviews yet for this campground!</h4>
+        </div>
         <% } %>
     </div>
 
 </div>
-
-<script>
-    const mapToken = '<%-process.env.MAPBOX_TOKEN%>'
-    const campground = <%- JSON.stringify(campground) %>
-</script>
 
 <script src='/js/showPageMap.js'></script>
