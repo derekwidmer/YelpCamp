@@ -5,4 +5,4 @@ This project helped me build my base in NodeJS full-stack development with vario
 
 I have made and will continue to make changes to this project to beautify the interface and add features.
 
-A link to the site: www.yelpcamp-dwidmer.herokuapp.com
+A link to the site: http://yelpcamp-dwidmer.herokuapp.com/
