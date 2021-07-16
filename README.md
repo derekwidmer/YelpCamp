@@ -1,8 +1,7 @@
-# yelpcamp
-This is the "YelpCamp" project from the Colt Steele Web Developer Bootcamp
+# YelpCamp
+A camping social site akin to Yelp with full functionality. Feel free to try it out!
+Made with Node.js, Express, MongoDB, Bootstrap, etc.
 
-This project helped me build my base in NodeJS full-stack development with various packages.
+Has a fully functioning backend connected to a MongoDB Atlas DB, running on a Heroku free server.
 
-I have made and will continue to make changes to this project to beautify the interface and add features.
-
-A link to the site: http://yelpcamp-dwidmer.herokuapp.com/
+A link to the live site: http://yelpcamp-dwidmer.herokuapp.com/
